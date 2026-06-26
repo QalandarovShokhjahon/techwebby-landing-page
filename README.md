@@ -15,3 +15,5 @@ Responsive landing page built with:
 - Team
 - Contact Form
 - Footer
+
+https://qalandarovshokhjahon.github.io/techwebby-landing-page/
