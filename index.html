@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Practice</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-[#0f172a] text-white font-sans">
+    <header class="flex flex-row py-5 px-[4%] justify-between items-center text-center border-b border-gray-700 max-w-7xl mx-auto">
+        <a class="text-2xl text-cyan-400 font-semibold" href="#">TechWebby</a>
+        <nav class="hidden md:flex gap-5 text-gray-300">
+            <a class="hover:text-cyan-400 transition-colors duration-300" href="#about">Biz haqimizda</a>
+            <a class="hover:text-cyan-400 transition-colors duration-300" href="#services">Xizmatlar</a>
+            <a class="hover:text-cyan-400 transition-colors duration-300" href="#portfolio">Portfolio</a>
+            <a class="hover:text-cyan-400 transition-colors duration-300" href="#team">Jamoa</a>
+            <a class="hover:text-cyan-400 transition-colors duration-300" href="#contact">Aloqa</a>
+        </nav>
+        <a class="bg-cyan-400 text-black py-2 px-4 rounded-[5px] font-semibold hover:bg-cyan-500 transition duration-300" href="#">Bog'lanish</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="flex py-30 px-[10%] justify-center items-center text-center gap-20 bg-[#121b32]">
+            <div class="flex flex-col gap-5">
+            <h1 class="text-2xl md:text-5xl font-bold">Biz texnologiyalar orqali <span class="text-cyan-400">kelajakni yaratamiz</span> 💡</h1>
+            <p class="text-[16px] text-[#D1D5DB] max-w-2xl mx-auto">TechWebby — innovatsion IT brend bo‘lib, web va mobil texnologiyalar, dizayn va sun’iy intellekt sohasida yechimlar yaratadi.</p>
+            <a class="bg-cyan-400 text-black font-semibold self-center py-2 px-10 rounded-[5px] hover:bg-cyan-500 transition duration-300" href="#">Xizmatlarni ko'rish</a>
+            </div>
+        </section>
+
+
+        <!-- About me -->
+         <section id="about" class="flex py-20 px-[10%] justify-center items-center text-center">
+            <div class="flex flex-col gap-6">
+                <h1 class="text-3xl font-bold">Biz haqimizda</h1>
+                <p class="text-[16px] text-[#D1D5DB] max-w-5xl mx-auto"><span class="text-cyan-400">TechWebby</span> — 2025 yilda tashkil etilgan zamonaviy IT brend. Bizning maqsadimiz — O‘zbekiston va dunyo bizneslarini texnologiyalar yordamida rivojlantirish. Biz web-saytlar, mobil ilovalar va AI yechimlari orqali mijozlarimizga natija olib kelamiz.</p>
+            </div>
+         </section>
+
+
+         <!-- Services -->
+         <section id="services" class="flex flex-col py-30 px-[10%] justify-center items-center text-center bg-[#121b32] gap-10">
+                <h1 class="text-3xl font-bold">Xizmatlarimiz</h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="flex flex-col bg-[#0f172a] py-8 px-8 rounded-[10px] border border-gray-700 gap-2 hover:border-cyan-400 transition duration-300">
+                        <h3 class="text-cyan-400 text-[20px] font-semibold">🌐 Web Development</h3>
+                        <p class="text-[16px] text-[#D1D5DB]">Biznesingiz uchun zamonaviy, tezkor va xavfsiz web-saytlar yaratamiz.</p>
+                    </div>
+                    <div class="flex flex-col bg-[#0f172a] py-8 px-8 rounded-[10px] border border-gray-700 gap-2 hover:border-cyan-400 transition duration-300">
+                        <h3 class="text-cyan-400 text-[20px] font-semibold">📱 Mobil ilovalar</h3>
+                        <p class="text-[16px] text-[#D1D5DB]">iOS va Android uchun qulay, ishlash tezligi yuqori mobil ilovalar.</p>
+                    </div>
+                    <div class="flex flex-col bg-[#0f172a] py-8 px-8 rounded-[10px] border border-gray-700 gap-2 hover:border-cyan-400 transition duration-300">
+                        <h3 class="text-cyan-400 text-[20px] font-semibold">🎨 UI/UX Dizayn</h3>
+                        <p class="text-[16px] text-[#D1D5DB]">Foydalanuvchilar uchun chiroyli va oson interfeys dizaynlari ishlab chiqamiz.</p>
+                    </div>
+                    <div class="flex flex-col bg-[#0f172a] py-8 px-8 rounded-[10px] border border-gray-700 gap-2 hover:border-cyan-400 transition duration-300">
+                        <h3 class="text-cyan-400 text-[20px] font-semibold">🤖 AI Yechimlar</h3>
+                        <p class="text-[16px] text-[#D1D5DB]">Sun’iy intellekt asosidagi avtomatlashtirilgan tizimlar yaratamiz.</p>
+                    </div>
+                    <div class="flex flex-col bg-[#0f172a] py-8 px-8 rounded-[10px] border border-gray-700 gap-2 hover:border-cyan-400 transition duration-300">
+                        <h3 class="text-cyan-400 text-[20px] font-semibold">☁️ IT Konsalting</h3>
+                        <p class="text-[16px] text-[#D1D5DB]">Biznesingiz uchun texnologik strategiya va yechimlar ishlab chiqamiz.</p>
+                    </div>
+                    <div class="flex flex-col bg-[#0f172a] py-8 px-8 rounded-[10px] border border-gray-700 gap-2 hover:border-cyan-400 transition duration-300">
+                        <h3 class="text-cyan-400 text-[20px] font-semibold">💡 Startup hamkorligi</h3>
+                        <p class="text-[16px] text-[#D1D5DB]">Yangi g‘oyalarni IT texnologiyalar orqali hayotga tatbiq etamiz.</p>
+                    </div>
+                </div>
+         </section>
+
+
+         <!-- Portfolio -->
+          <section id="portfolio" class="flex flex-col py-20 px-[10%] justify-center items-center text-center gap-10">
+            <h1 class="text-3xl font-bold">Portfolio</h1>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="flex flex-col bg-[#121b32] py-10 px-4 rounded-[10px] border border-gray-700 gap-2">
+                    <h3 class="text-[16px] font-semibold">Korporativ sayt</h3>
+                    <p class="text-[14px] text-[#D1D5DB]">Kompaniya uchun ishlab chiqilgan korporativ web-sayt.</p>
+                </div>
+                <div class="flex flex-col bg-[#121b32] py-10 px-4 rounded-[10px] border border-gray-700 gap-2">
+                    <h3 class="text-[16px] font-semibold">Korporativ sayt</h3>
+                    <p class="text-[14px] text-[#D1D5DB]">Kompaniya uchun ishlab chiqilgan korporativ web-sayt.</p>
+                </div>
+                <div class="flex flex-col bg-[#121b32] py-10 px-4 rounded-[10px] border border-gray-700 gap-2">
+                    <h3 class="text-[16px] font-semibold">Korporativ sayt</h3>
+                    <p class="text-[14px] text-[#D1D5DB]">Kompaniya uchun ishlab chiqilgan korporativ web-sayt.</p>
+                </div>
+            </div>
+          </section>
+
+
+          <!-- Team -->
+           <section id="team" class="flex flex-col py-20 px-[10%] justify-center items-center text-center gap-10 bg-[#121b32]">
+            <h1 class="text-3xl font-bold">Bizning jamoa</h1>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="flex flex-col bg-[#0f172a] py-10 px-20 rounded-[10px] border border-gray-700 gap-2">
+                    <h3 class="text-[16px] font-semibold">Shokhjahon</h3>
+                    <span class="text-cyan-400">Founder & Developer</span>
+                </div>
+                <div class="flex flex-col bg-[#0f172a] py-10 px-20 rounded-[10px] border border-gray-700 gap-2">
+                    <h3 class="text-[16px] font-semibold">Admin</h3>
+                    <span class="text-cyan-400">UI/UX Designer</span>
+                </div>
+                <div class="flex flex-col bg-[#0f172a] py-10 px-20 rounded-[10px] border border-gray-700 gap-2">
+                    <h3 class="text-[16px] font-semibold">Admin</h3>
+                    <span class="text-cyan-400">Frontend Engineer</span>
+                </div>
+            </div>
+          </section>
+
+
+          <!-- Contact -->
+           <section id="contact" class="flex flex-col justify-center items-center text-center px-[10%] py-20 gap-5">
+            <h1 class="text-3xl font-bold">Aloqa</h1>
+            <p class="text-[#D1D5DB] mb-5">Biz bilan bog‘laning — sizning g‘oyangizni texnologiyalar yordamida haqiqatga aylantiramiz.</p>
+
+            <form class="flex flex-col gap-4 w-full max-w-xl">
+                <input type="text" placeholder="Ismingiz" class="bg-[#1e293b] p-3 rounded-md border border-gray-700 focus:border-cyan-400 outline-none">
+                <input type="email" placeholder="Email yoki Telegram" class="bg-[#1e293b] p-3 rounded-md border border-gray-700 focus:border-cyan-400 outline-none">
+                <textarea placeholder="Xabaringiz..." rows="4" class="bg-[#1e293b] p-3 rounded-md border border-gray-700 focus:border-cyan-400 outline-none"></textarea>
+                <button class="bg-cyan-400 text-black font-semibold py-3 rounded-md hover:bg-cyan-500 transition duration-300">Yuborish</button>
+            </form>
+           </section>
+    </main>
+
+
+    <!-- Footer -->
+     <footer class="flex flex-col border-t border-gray-700 py-6 px-4 text-center gap-4">
+        <p class="text-[#9CA3AF] text-[16px]">© 2026 Author: Shokhjahon-Qalandarov TechWebby — Innovatsion IT yechimlar markazi</p>
+
+        <div class="flex justify-center items-center text-center gap-4 text-[#9CA3AF]">
+            <a class="hover:text-cyan-400 transition-colors duration-300" href="#">Telegram</a>
+            <a class="hover:text-cyan-400 transition-colors duration-300" href="#">Instagram</a>
+            <a class="hover:text-cyan-400 transition-colors duration-300" href="#">Github</a>
+        </div>
+     </footer>
+</body>
+</html>
